@@ -9,12 +9,12 @@ class FilePickerButton extends StatelessWidget {
   final bool isLoading;
 
   const FilePickerButton({
-    Key? key,
+    super.key,
     required this.label,
     required this.icon,
     required this.onTap,
     this.isLoading = false,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

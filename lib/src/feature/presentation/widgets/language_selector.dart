@@ -7,11 +7,11 @@ class LanguageSelector extends StatelessWidget {
   final Function(String) onLanguageSelected;
 
   const LanguageSelector({
-    Key? key,
+    super.key,
     required this.languages,
     required this.selectedLanguage,
     required this.onLanguageSelected,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

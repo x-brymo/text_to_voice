@@ -8,7 +8,7 @@ import '../widgets/record_button.dart';
 
 
 class RecordScreen extends ConsumerStatefulWidget {
-  const RecordScreen({Key? key}) : super(key: key);
+  const RecordScreen({super.key});
 
   @override
   ConsumerState<RecordScreen> createState() => _RecordScreenState();
