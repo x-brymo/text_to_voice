@@ -9,7 +9,7 @@ import '../widgets/language_selector.dart';
 
 
 class TextToSpeechScreen extends ConsumerStatefulWidget {
-  const TextToSpeechScreen({Key? key}) : super(key: key);
+  const TextToSpeechScreen({super.key});
 
   @override
   ConsumerState<TextToSpeechScreen> createState() => _TextToSpeechScreenState();

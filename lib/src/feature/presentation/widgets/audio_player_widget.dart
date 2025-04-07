@@ -10,11 +10,11 @@ class AudioPlayerWidget extends ConsumerStatefulWidget {
   final bool showShareButton;
 
   const AudioPlayerWidget({
-    Key? key, 
+    super.key, 
     required this.filePath,
     this.title,
     this.showShareButton = true,
-  }) : super(key: key);
+  });
 
   @override
   ConsumerState<AudioPlayerWidget> createState() => _AudioPlayerWidgetState();

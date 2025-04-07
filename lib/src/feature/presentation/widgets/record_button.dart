@@ -8,11 +8,11 @@ class RecordButton extends StatelessWidget {
   final double size;
 
   const RecordButton({
-    Key? key,
+    super.key,
     required this.isRecording,
     required this.onTap,
     this.size = 100.0,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

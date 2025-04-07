@@ -6,7 +6,7 @@ import 'text_to_speech_screen.dart';
 import 'speech_to_text_screen.dart';
 
 class HomeScreen extends ConsumerWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
