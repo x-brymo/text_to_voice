@@ -1,11 +1,23 @@
+// main.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tts/flutter_tts.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:permission_handler/permission_handler.dart';
+import 'app.dart';
 
-import 'forWindows.dart';
-
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(ForWindows());
+  
+  // Request permissions
+  await [
+    Permission.microphone,
+    Permission.storage,
+  ].request();
+  
+  runApp(
+    const ProviderScope(
+      child: MyApp(),
+    ),
+  );
 }
 
 

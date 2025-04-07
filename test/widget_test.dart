@@ -7,9 +7,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:text_to_voice/forWindows.dart';
+import 'package:text_to_voice/core/mixin/forWindows.dart';
 
-import 'package:text_to_voice/main.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

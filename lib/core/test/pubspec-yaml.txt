@@ -1,0 +1,48 @@
+name: pataa_voice_app
+description: A Flutter application for text-to-speech and speech-to-text conversion.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # State management
+  flutter_riverpod: ^2.3.6
+  
+  # UI and animations
+  google_fonts: ^4.0.4
+  lottie: ^2.4.0
+  flutter_animate: ^4.1.1
+  
+  # Speech and audio processing
+  flutter_tts: ^3.7.0
+  speech_to_text: ^6.1.1
+  flutter_sound: ^9.2.13
+  record: ^4.4.4
+  path_provider: ^2.0.15
+  file_picker: ^5.3.0
+  
+  # File management
+  permission_handler: ^10.3.0
+  share_plus: ^7.0.2
+  
+  # Additional utilities
+  uuid: ^3.0.7
+  intl: ^0.18.1
+  
+  # App deployment
+  shorebird_code_push: ^1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/animations/
+    - assets/images/

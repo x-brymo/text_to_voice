@@ -8,6 +8,8 @@ import 'package:flutter_tts/flutter_tts.dart';
 
 
 class ForWindows extends StatefulWidget {
+  const ForWindows({super.key});
+
   @override
   _ForWindowsState createState() => _ForWindowsState();
 }
@@ -231,7 +233,7 @@ class _ForWindowsState extends State<ForWindows> {
             }
           });
     } else {
-      return Container(width: 0, height: 0);
+      return SizedBox(width: 0, height: 0);
     }
   }
 
