@@ -11,7 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Voice App',
+      title: 'Converter',
+      debugShowCheckedModeBanner: false,
+      
       theme: ThemeData(
         primarySwatch: Colors.red,
         brightness: Brightness.dark,
@@ -20,6 +22,7 @@ class MyApp extends StatelessWidget {
           Theme.of(context).textTheme.apply(
             bodyColor: Colors.white,
             displayColor: Colors.white,
+            fontFamily: GoogleFonts.modernAntiqua().fontFamily,
           ),
         ),
         appBarTheme: const AppBarTheme(

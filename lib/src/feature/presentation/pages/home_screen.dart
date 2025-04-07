@@ -19,7 +19,7 @@ class HomeScreen extends ConsumerWidget {
             children: [
               const SizedBox(height: 40),
               Text(
-                'Pataa Voice App',
+                'Converter Voice App',
                 style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
@@ -58,6 +58,17 @@ class HomeScreen extends ConsumerWidget {
                   MaterialPageRoute(builder: (context) => const SpeechToTextScreen()),
                 ),
               ),
+              const SizedBox(height: 20),
+              Center(
+                child: Text(" @copyrights 2025 \n All Rights Reserved ",
+                 style: TextStyle(
+                  color: Colors.grey[400],
+                  fontWeight: FontWeight.bold,                
+                  fontSize: 14, 
+                  overflow: TextOverflow.ellipsis,
+                
+                ),),
+              )
             ],
           ),
         ),

@@ -21,11 +21,7 @@ class _RecordScreenState extends ConsumerState<RecordScreen> {
     
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Create Pataa'),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () => Navigator.pop(context),
-        ),
+        title: const Text('Create Record'),
       ),
       body: SafeArea(
         child: Padding(
@@ -44,7 +40,7 @@ class _RecordScreenState extends ConsumerState<RecordScreen> {
                     Row(
                       children: [
                         Text(
-                          'Pataa Code:',
+                          'Test Code:',
                           style: TextStyle(
                             color: Colors.grey[400],
                             fontSize: 14,
@@ -52,7 +48,7 @@ class _RecordScreenState extends ConsumerState<RecordScreen> {
                         ),
                         const SizedBox(width: 8),
                         const Text(
-                          '*TANUJ12345',
+                          'HAFEZ12345',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 14,
@@ -60,7 +56,22 @@ class _RecordScreenState extends ConsumerState<RecordScreen> {
                         ),
                         const Spacer(),
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            showDialog(context: context, builder: (context){
+                              return AlertDialog(
+                                title: const Text('Soon Adding'),
+                                content: const Text('Can be test soon time'),
+                                actions: [
+                                  TextButton(
+                                    onPressed: (){
+                                      Navigator.pop(context);
+                                    },
+                                    child: const Text('Close'),
+                                  ),
+                                ],
+                              );
+                            });
+                          },
                           style: TextButton.styleFrom(
                             backgroundColor: Colors.grey[800],
                             shape: RoundedRectangleBorder(
@@ -68,7 +79,7 @@ class _RecordScreenState extends ConsumerState<RecordScreen> {
                             ),
                             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           ),
-                          child: const Text('Sample'),
+                          child: const Text('Sample Test'),
                         ),
                       ],
                     ),
@@ -102,7 +113,7 @@ class _RecordScreenState extends ConsumerState<RecordScreen> {
                               ),
                               const SizedBox(width: 4),
                               Text(
-                                'Treasure Island Mall',
+                                'Convector Voice',
                                 style: TextStyle(
                                   color: Colors.grey[800],
                                   fontWeight: FontWeight.bold,
